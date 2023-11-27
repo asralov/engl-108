@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding:0;
+    font-family: monospace;
+}
+
+body{
+    background-color:#000;
+    color: green;
+}
+
+#title{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    line-height: 1.8;
+    
+
+
+}
+
+#title h1, #title h2{
+    width: fit-content;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 0 0 10px 10px;
+
+}
+
+#content{
+    width: 100%;
+}
+
+.textBox{
+    position: relative;
+    width: 50%;
+    left: 22%;
+    border: solid 2px green;
+    padding: 50px 3%;
+    line-height: 3;
+    margin-top: 30px;
+    text-align: center;
+}
