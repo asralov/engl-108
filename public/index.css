@@ -9,6 +9,14 @@ body{
     color: green;
 }
 
+hr{
+    background-color: green;
+    height: 2px;
+    border: none;
+    border-radius: 10px 10px 10px 10px;
+
+}
+
 #title{
     width: 100%;
     display: flex;
@@ -40,8 +48,51 @@ body{
     width: 50%;
     left: 22%;
     border: solid 2px green;
-    padding: 50px 3%;
+    padding: 40px 3%;
     line-height: 3;
     margin-top: 30px;
     text-align: center;
+    
+}
+
+.textBox:nth-child(1){
+    border-radius: 100px 100px 0 0;
+}
+
+.textBox:last-child{
+    border-radius: 0 0 100px 100px;
+}
+
+.textBox p{
+    text-align: left;
+}
+/*
+.textBox:nth-child(1){
+    border-radius: 54% 46% 32% 68% / 39% 49% 51% 61% ;
+}
+
+.textBox:nth-child(2){
+    border-radius: 22% 78% 75% 25% / 57% 49% 51% 43%;
+}
+
+.textBox:nth-child(3){
+    border-radius: 22% 78% 37% 63% / 77% 18% 82% 23% ;
+}
+
+.textBox:nth-child(4){
+    border-radius: 75% 25% 50% 50% / 27% 18% 82% 73% ;
+}*/
+
+@media screen and (max-width: 520px) {
+    .textBox{
+        width: 90%;
+        padding: 20px 1%;
+        left: 4%;
+        line-height: 1.5;
+    }
+
+    #title{
+        font-size: 14px;
+        line-height: 1.5;
+    }
 }
