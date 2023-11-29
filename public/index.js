@@ -1,6 +1,5 @@
 
 
-
 function goal1fetch(id){
     const path = "./goal1.txt";
     fetchFiles(path, id);

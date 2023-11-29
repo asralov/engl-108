@@ -27,6 +27,7 @@ hr{
     font-size: 16px;
     line-height: 1.8;
     
+    
 
 
 }
@@ -41,6 +42,18 @@ hr{
 
 #content{
     width: 100%;
+}
+
+#mode{
+    position: fixed;
+    top: 1%;
+    right: 1%;
+}
+
+#changeModeBtn{
+    border: none;
+    border-radius: 10px 10px 10px 10px;
+    padding: 10px 30px;
 }
 
 .textBox{
