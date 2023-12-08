@@ -88,6 +88,10 @@ hr{
     text-align: left;
 }
 
+.goalPic{
+    width: 300px;
+    object-fit: contain;
+}
 @media screen and (max-width: 520px) {
     .textBox{
         width: 90%;

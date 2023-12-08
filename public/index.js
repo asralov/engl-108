@@ -1,5 +1,10 @@
-
-
+SOURCES = {
+    "goal1": "",
+    "goal2": "",
+    "goal3": "",
+    "goal4": "",
+    "goal5": ""
+}
 function goal1fetch(id){
     const path = "./goal1.txt";
     fetchFiles(path, id);
@@ -76,7 +81,10 @@ function getHTMLCode(goalName, goalCollection){
                    <hr>
                    <h5>${goalSub}</h5>
                    <hr>
-                   <p id="goal${goalNum}"></p>`;
+                   <p id="goal${goalNum}"></p>
+                   <br>
+                   <img class="goalPic" src="./goal${goalNum}-meme.jpeg"><br>
+                   <a src="#">Check the Artefact</a>`;
     goalContent("goal"+goalNum);
     return content;
 }
