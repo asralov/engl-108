@@ -91,6 +91,23 @@ hr{
 .goalPic{
     width: 300px;
     object-fit: contain;
+    border-radius: 5px;
+    border: solid 1px #fff;
+}
+
+.sourceBtn{
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    transition: .3s;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.sourceBtn:hover{
+    background-color: #fff;
+    color: #333;
 }
 @media screen and (max-width: 520px) {
     .textBox{
