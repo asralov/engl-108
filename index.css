@@ -1,0 +1,278 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  text-rendering: optimizeLegibility;
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+body {
+  background-color: #000000;
+  color: #fff;
+}
+svg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+}
+
+#menu {
+  display: flex;
+  justify-content: end;
+  gap: 20px;
+  padding-right: 10px;
+  padding-top: 5px;
+  height: 25px;
+  position: fixed;
+  right: 0;
+}
+
+#menu button,
+.viewGitBtn {
+  background-color: transparent;
+  color: white;
+  border: none;
+  font-size: 16px;
+  transition: 0.3s ease-in;
+  cursor: pointer;
+}
+
+#menu button:after,
+.viewGitBtn:after {
+  display: block;
+  content: "";
+  border-bottom: solid 3px #ff0000;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+}
+#menu button:hover:after,
+.viewGitBtn:hover:after {
+  transform: scaleX(1);
+}
+#menu button.fromRight:after,
+.viewGitBtn.fromRight:after {
+  transform-origin: 100% 50%;
+}
+#menu button.fromLeft:after,
+.viewGitBtn.fromLeft:after {
+  transform-origin: 0% 50%;
+}
+
+#info {
+  position: fixed;
+  width: 50% !important;
+  line-height: 2;
+  background-color: rgba(0, 0, 0, 0.3);
+  left: 25% !important;
+  top: 70px;
+  padding: 30px 30px;
+  font-size: 14px;
+  text-align: center;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#info,
+#classes,
+#projectBox {
+  /* Set initial opacity to 0 */
+  opacity: 0;
+  /* Apply the animation with a delay */
+  animation: fadeIn 1s ease-in-out 0s forwards;
+}
+
+#classes {
+  position: fixed;
+  overflow: auto;
+  width: 98%;
+  left: 1%;
+  bottom: 1%;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  line-height: 2;
+  font-size: 14px;
+  top: 40px;
+  border: 1px solid #000000;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  border: 1px solid #000000;
+  text-align: left;
+  padding: 8px;
+}
+
+th {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+#projectBox {
+  position: fixed;
+  top: 40px;
+  width: 98%;
+  left: 1%;
+  gap: 10px;
+  bottom: 1%;
+  overflow: auto;
+  display: flex;
+  flex-wrap: wrap; /* Allow content to wrap to the next line */
+  justify-content: space-evenly; /* Adjust as needed */
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 400px;
+  row-gap: 10px;
+  align-items: center;
+  width: 30%; /* Adjust width and margin as needed */
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 5px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.box img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.descBox {
+  position: relative;
+  width: 90%;
+  height: 100px;
+  overflow: auto;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.viewGitBtn {
+  border: none;
+  background-color: transparent;
+  font-size: 12px !important;
+}
+
+@media screen and (max-width: 1024px) {
+  #info {
+    position: fixed;
+    width: 50%;
+    line-height: 2;
+    bottom: 1%;
+    background-color: rgba(0, 0, 0, 0.3);
+    left: 25%;
+    top: 50px;
+    padding: 20px 20px;
+    font-size: 14px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-height: 1380px) {
+  #info {
+    position: fixed;
+    width: 90%;
+    line-height: 2;
+    height: fit-content;
+    background-color: rgba(0, 0, 0, 0.3);
+    left: 2.5%;
+    top: 50px;
+    padding: 20px 20px;
+    font-size: 14px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  #info {
+    position: fixed;
+    width: 90%;
+    line-height: 2;
+    bottom: 1%;
+    background-color: rgba(0, 0, 0, 0.3);
+    left: 2.5%;
+    top: 60px;
+    padding: 20px 20px;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  #classes {
+    position: fixed;
+    overflow: auto;
+    width: 98%;
+    left: 1%;
+    bottom: 1%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    line-height: 2;
+    font-size: 14px;
+    top: 60px;
+    border: 1px solid #000000;
+  }
+  #projectBox {
+    position: fixed;
+    top: 60px;
+    width: 98%;
+    left: 1%;
+    gap: 10px;
+    bottom: 1%;
+    overflow: auto;
+    display: flex;
+    flex-wrap: wrap; /* Allow content to wrap to the next line */
+    justify-content: space-evenly; /* Adjust as needed */
+  }
+
+  .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 400px;
+
+    align-items: center;
+    width: 48%; /* Adjust width and margin as needed */
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  .box img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .descBox {
+    position: relative;
+    width: 90%;
+    height: 100px;
+    overflow: auto;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .viewGitBtn {
+    border: none;
+    background-color: transparent;
+    font-size: 16px !important;
+  }
+}
