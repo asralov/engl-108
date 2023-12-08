@@ -1,16 +1,22 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100&family=Open+Sans:wght@300&display=swap');
+
+
 *{
     margin: 0;
     padding:0;
-    font-family: monospace;
+    font-family: 'DM Sans', sans-serif;
+    
+
 }
 
 body{
-    background-color:#000;
-    color: green;
+    background-color:#333;
+    color: #fff;
 }
 
 hr{
-    background-color: green;
+    background-color: #fff;
     height: 2px;
     border: none;
     border-radius: 10px 10px 10px 10px;
@@ -52,49 +58,35 @@ hr{
 
 #changeModeBtn{
     border: none;
-    border-radius: 10px 10px 10px 10px;
-    padding: 10px 30px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: .3s;
+    cursor: pointer;
+}
+
+#changeModeBtn:hover{
+    background-color: #111;
+    color: #fff;
 }
 
 .textBox{
     position: relative;
     width: 50%;
     left: 22%;
-    border: solid 2px green;
+    border: solid 2px #fff;
     padding: 40px 3%;
     line-height: 3;
     margin-top: 30px;
     text-align: center;
+    background: linear-gradient(#111, #333, #111);
+    border-radius: 5px;
     
 }
 
-.textBox:nth-child(1){
-    border-radius: 100px 100px 0 0;
-}
-
-.textBox:last-child{
-    border-radius: 0 0 100px 100px;
-}
 
 .textBox p{
     text-align: left;
 }
-/*
-.textBox:nth-child(1){
-    border-radius: 54% 46% 32% 68% / 39% 49% 51% 61% ;
-}
-
-.textBox:nth-child(2){
-    border-radius: 22% 78% 75% 25% / 57% 49% 51% 43%;
-}
-
-.textBox:nth-child(3){
-    border-radius: 22% 78% 37% 63% / 77% 18% 82% 23% ;
-}
-
-.textBox:nth-child(4){
-    border-radius: 75% 25% 50% 50% / 27% 18% 82% 73% ;
-}*/
 
 @media screen and (max-width: 520px) {
     .textBox{
