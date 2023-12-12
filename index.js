@@ -1,6 +1,6 @@
 SOURCES = {
     "goal1": "https://docs.google.com/document/d/1CvILUZKEmgVupjZXY-42RB31vANwy9KRXD-Qvk1ipBc/edit?usp=sharing",
-    "goal2": "https://docs.google.com/document/d/1kt4MWCTob3ttgdgO8hIHEY8lNARWIx1MAHac7EYxuck/edit?usp=sharing",
+    "goal2": "https://docs.google.com/document/d/1urWO30T-DO8HZVGBhfLpP2Ue6egDK1AX/edit?usp=sharing&ouid=107514097298431351018&rtpof=true&sd=true",
     "goal3": "https://docs.google.com/document/d/1fTG-8pQcmSi0hVe7g2d5VXM5Wrhqf7pF/edit?usp=sharing&ouid=107514097298431351018&rtpof=true&sd=true",
     "goal4": "https://docs.google.com/document/d/1oY_LVHRf5dKjy1h6p-ewXZWo6Du6Epq25FQvtrmG__4/edit?usp=sharing",
     "goal5": "https://docs.google.com/document/d/1udw_U_x9xTycGfUytd-qCq9O7YKFKeDUMPlq6eIfK-g/edit?usp=sharing"
